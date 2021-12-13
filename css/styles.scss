@@ -1,0 +1,139 @@
+// SASS Variables
+$main-color: #4bc3b5;
+$main-bg: #abbdcf;
+$letter-buttons-hover: #011033;
+$letter-buttons: #032980;
+$transition-point-2-seconds: all 0.2s ease-out;
+
+// SASS Mixin for all div containers
+@mixin divStyles {
+    max-height: 30%;
+    display: block;
+    width: 100%;
+    background-color: $main-bg;
+    text-align: center;
+}
+
+// SASS Mixin for game text in gameDisplay
+@mixin textStyles {
+    font-size: 20px;
+}
+
+// Basic HTML Page setup
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-height: 100%; 
+    max-width: 100%;
+    overflow: hidden;
+    font-family: 'QuickSand', sans-serif;
+    background-color: $main-bg;
+}   
+
+// Styling for header Hangman logo, animated with JavaScript
+#hangImages {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+// Styling for the keyboard 
+.keyboard {
+    @include divStyles;
+    padding: 20px;
+}
+
+.letterButtons {
+    width: 50px;
+    height: 50px;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    background: $letter-buttons;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: $transition-point-2-seconds;
+}
+
+.letterButtons:hover {
+    background: $letter-buttons-hover;
+}
+
+// Styling for the guessing area
+.gameDisplay {
+    @include divStyles;
+}
+
+.underscores {
+    list-style: none;
+    display:inline-block;
+    font-size: 28px;
+    padding: 10px;
+}
+
+#guessingArea {
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+#guessingText {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#doesLetterExist {
+    @include textStyles;
+}
+
+#lifeCounter {
+    @include textStyles;
+}
+
+#showHint {
+    @include textStyles;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    margin: 10px;
+    background: $main-color;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: $transition-point-2-seconds;
+}
+
+#showHint:hover {
+    background: $letter-buttons-hover;
+}
+
+#hintText {
+    @include textStyles;
+}
+
+// Styling for the hangman graphic
+.hangmanImage {
+    @include divStyles;
+}
+
+#gameImage {
+    width: 350px;
+    margin: 10px;
+    border: 6px solid $main-color;
+    border-radius: 5px;
+}

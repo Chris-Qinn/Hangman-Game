@@ -1,0 +1,134 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  font-family: 'QuickSand', sans-serif;
+  background-color: #abbdcf;
+}
+
+#hangImages {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.keyboard {
+  max-height: 30%;
+  display: block;
+  width: 100%;
+  background-color: #abbdcf;
+  text-align: center;
+  padding: 20px;
+}
+
+.letterButtons {
+  width: 50px;
+  height: 50px;
+  border: none;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+  background: #032980;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.letterButtons:hover {
+  background: #011033;
+}
+
+.gameDisplay {
+  max-height: 30%;
+  display: block;
+  width: 100%;
+  background-color: #abbdcf;
+  text-align: center;
+}
+
+.underscores {
+  list-style: none;
+  display: inline-block;
+  font-size: 28px;
+  padding: 10px;
+}
+
+#guessingArea {
+  text-align: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+#guessingText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#doesLetterExist {
+  font-size: 20px;
+}
+
+#lifeCounter {
+  font-size: 20px;
+}
+
+#showHint {
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  margin: 10px;
+  background: #4bc3b5;
+  cursor: pointer;
+  border-radius: 2px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+#showHint:hover {
+  background: #011033;
+}
+
+#hintText {
+  font-size: 20px;
+}
+
+.hangmanImage {
+  max-height: 30%;
+  display: block;
+  width: 100%;
+  background-color: #abbdcf;
+  text-align: center;
+}
+
+#gameImage {
+  width: 350px;
+  margin: 10px;
+  border: 6px solid #4bc3b5;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=styles.css.map */

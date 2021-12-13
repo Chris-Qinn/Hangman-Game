@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>COMP 2132 Final Project -- Chris Qin</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main container for project -->
+    <div class="main">
+        <!-- To display the graphicals -->
+        <div class="hangmanImage"></div>
+
+        <!-- To display the text results to te UI-->
+        <div class="gameDisplay"></div>
+
+        <!-- The keyboard of letters for the game-->
+        <div class="keyboard"></div>
+    </div>
+
+    <!-- Losing Modal -->
+    <div id="loser" class="modal">
+        <div class="modal-content">
+          <div>Game Over! You Lose!
+            <button class="playAgain">Play Again</button>
+          </div>
+        </div>
+    </div>
+
+    <!-- Winning Modal -->
+    <div id="winner" class="modal">
+        <div class="modal-content">
+          <div>Congrats! You Won!
+            <button class="playAgain">Play Again</button>
+          </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
